@@ -1,0 +1,88 @@
+/* Configuración de la fuente y el color predeterminados para todos los elementos. */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+/* Elimina el margen predeterminado que el navegador agrega al cuerpo. */
+body {
+    margin: 0;
+}
+
+/* Centrar la calculadora en el medio de la página. */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+}
+
+/* Crea una grill con 4 columnas y 6 filas. */
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: 160px repeat(5, 80px);
+    background-color: #D8D8D7;
+    padding: 15px;
+    box-shadow: 3px 3px 5px -3px #00000040, 3px 3px 5px 1px grey;
+   
+}
+
+/* Estilo de los botones. */
+button {
+    cursor: pointer;
+    margin: 5px;
+    font-size: 30px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F5F5F5;
+    box-shadow: 3px 3px 5px -3px #00000040, 3px 3px 5px 1px grey;
+}
+
+/* Cambiar el color de fondo de los botones del operador. */
+.operador {
+   background-color: #0088FF;
+}
+
+/* Cambiando el color de fondo del botón con la clase `borrar` a amarillo. */
+.borrar {
+    background-color: #fcf75e;
+}
+
+/* Configuración de la pantalla de la calculadora. */
+.display {
+    /* Display de todas las columnas. */
+    grid-column: 1 / -1;
+    /* Propiedad CSS que le permite cambiar la dirección del eje principal del contenedor flexible. */
+    flex-direction: column;
+    /* Distribuye el espacio entre los elementos del contenedor. */
+    justify-content: space-between;
+    /* Propiedad de CSS que permite que el texto se divida en una nueva línea si es demasiado
+    largo. */
+    word-break: break-all;
+    /* Propiedad CSS que le permite cambiar el eje principal del contenedor flexible. */
+    display: flex;
+    padding: 20px;
+    height: 80px;
+    margin: 10px 10px 20px;
+    margin-top: 15px;
+    background-color: #95c1c1;
+    text-align: right;
+    box-shadow: 1px 0px 1px 10px #00000033;
+}
+
+/* Establece el tamaño de fuente de los elementos con los id's `valor-actual` y `valor-anterior` a
+30px. */
+#valor-actual, #valor-anterior{
+    font-size: 30px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 15px;
+    padding: 25px;
+    font-size: 30px;
+    background: #003153;
+    height: 50px;
+  }

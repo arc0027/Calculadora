@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora</title>
+        <link href="index.css" rel="stylesheet" />
+        <script src="Interfaz.js" type="text/javascript"></script>
+        <script src="Calculadora.js" type="text/javascript"></script>
+        <!-- Carga el archivo `index.js`, que contiene el código que se ejecutará cuando se cargue la
+        página. 
+        El atributo defer hace que se siga procesando el html y que el script se ejecute en segundo plano cuando 
+        ya se ha procesado completamente el HTML, -->
+        <script src="index.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+
+        <!-- El código HTML que se va a mostrar en el navegador. -->
+        <div class="container">
+            <div class="calculadora">
+                <div class="display">
+                    <div id="valor-anterior"></div>
+                    <div id="valor-actual"></div>
+                </div>
+                <!-- Botones de la calculadora. -->
+                <button class="operador" value="raiz">√</button>
+                <button class="borrar" onclick="display.borrarTodo()">C</button>
+                <button class="borrar" onclick="display.borrar()">CE</button>
+                <button class="operador" value="dividir">÷</button>
+                <button class="numero">7</button>
+                <button class="numero">8</button>
+                <button class="numero">9</button>
+                <button class="operador" value="multiplicar">x</button>
+                <button class="numero">4</button>
+                <button class="numero">5</button>
+                <button class="numero">6</button>
+                <button class="operador" value="restar">-</button>
+                <button class="numero">1</button>
+                <button class="numero">2</button>
+                <button class="numero">3</button>
+                <button class="operador" value="sumar">+</button>
+                <button class="numero">0</button>
+                <button class="numero">.</button>
+                <button class="numero" value="porcentaje">%</button>
+                <button class="operador" value="igual">=</button>
+            </div>
+        </div>
+        
+    </body>
+ 
+</html>
